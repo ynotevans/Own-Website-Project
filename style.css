@@ -1,0 +1,82 @@
+html {
+    height: 100%;
+    overflow: scroll;
+    
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0; 
+    height: 100vh;
+    width: 100wh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.top {
+    padding: 20px 100px;
+    margin: 50px 50px;
+    border-spacing: 5px 5px;
+}
+
+.top-heading {
+    padding: 20px 50px;
+    margin: 50px 50px;
+    text-align: center;
+}
+
+.content-one {
+    padding: 20px 100px;
+    margin: 50px 50px;
+    border-spacing: 10px 5px;
+    background-color: #b3fcd1;
+}
+
+.content-two {
+    padding: 20px 100px;
+    margin: 50px 50px;
+    border-spacing: 10px 5px;
+    background-color: #b3fcd1;
+}
+
+
+.heading {
+    text-align: center;
+ }
+
+ img{
+    width: 300px;
+    height: 300px;
+    border-width: thick;
+    border-radius: 50% ;
+    overflow: hidden;
+ }
+
+ .pernal-img img{
+    width:100%;
+}
+
+.paragraph {
+    text-align: left;
+ }
+
+ .social-icons {
+    text-align: center;
+ }
+
+ a {
+    text-decoration: none;
+    padding: 16px;
+}
+
+.footnote {
+    padding: 20px 100px;
+    margin: 50px 50px;
+    display: flex;
+    align-items: center;
+    background-color: #b3fcd1;
+    justify-content: space-evenly;
+    text-align: left;
+    border-radius: 5px;
+ }
