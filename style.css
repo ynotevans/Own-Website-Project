@@ -13,6 +13,73 @@ body {
     flex-direction: column;
 }
 
+.nav-bar {
+    background-color: #b3fcd1;
+    /* position: sticky;   */
+    align-items: center; 
+    justify-content: center; 
+    
+}
+
+.nav-bar-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    /* font-weight: bold; */
+}
+
+.nav-left {
+    padding: 10px 10px;
+    margin: 10px 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-right {
+
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 20%;
+    cursor: pointer; 
+}
+
+.nav-right li {
+    display: block;
+    list-style: none; 
+    float: right;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.nav-right ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction:row;
+    
+}
+
+a {
+    display: block;
+    padding: 3px;
+}
+
+#about-me, #work-experience, #education {
+    scroll-behavior:smooth;
+}
+
+.nav-bar-content a:hover {
+    background-color:rgb(47, 245, 97);
+	
+}
 
 .top {
     padding: 20px 100px;
@@ -27,17 +94,28 @@ body {
 }
 
 .content-one {
-    padding: 20px 100px;
-    margin: 50px 50px;
+    padding: 20px 30px;
+    margin: 50px 70px;
     border-spacing: 10px 5px;
     background-color: #b3fcd1;
+    border-radius: 40px;
 }
 
 .content-two {
-    padding: 20px 100px;
-    margin: 50px 50px;
+    padding: 20px 30px;
+    margin: 50px 70px;
     border-spacing: 10px 5px;
     background-color: #b3fcd1;
+    border-radius: 40px;
+}
+
+.content-three {
+    padding: 20px 30px;
+    margin: 50px 70px;
+    border-spacing: 10px 5px;
+    background-color: #b3fcd1;
+    border-radius: 40px;
+
 }
 
 
@@ -45,15 +123,15 @@ body {
     text-align: center;
  }
 
- img{
+img{
     width: 300px;
     height: 300px;
     border-width: thick;
     border-radius: 50% ;
     overflow: hidden;
- }
+}
 
- .pernal-img img{
+.pernal-img img{
     width:100%;
 }
 
@@ -80,3 +158,5 @@ body {
     text-align: left;
     border-radius: 5px;
  }
+
+ 

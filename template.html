@@ -7,6 +7,21 @@
     <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
+    <div class = "nav-bar">
+        <div class = "nav-bar-content">
+            <div class = "nav-left">
+                Hello there!
+            </div>
+            <div class = "nav-right">
+                <ul>
+                    <li><a href = "#about-me">About me!</a></li>
+                    <li><a href = "#work-experience">Work Experience</a></li>
+                    <li><a href = "#education">Education</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <div class = "top">
         <div class = "top-heading">
           <h1>Welcome to my Website! The website is in the midst of development. Stay tune!</h1>
@@ -29,7 +44,7 @@
 
     <div class = "content-one">
         <div class = "heading">
-            <h1> About Me</h1>
+            <h1 id = "about-me"> About Me</h1>
         </div>
         <div class = "paragraph">
             <p> I am Tony! Currently a Computer Science Undergraduate in Nanyang Technological University, School of Computer Science & Engineering, Singapore!</p>
@@ -38,14 +53,46 @@
 
     <div class = "content-two">
         <div class = "heading">
-            <h1>Work Experience</h1>
+            <h1 id = "work-experience">Work Experience</h1>
         </div>
-        <ul>
-            <li> Sygnum </li>
-            <li> Accenture </li>
-        </ul>
-        
+        <div class="timeline">
+            <div class="container left">
+              <div class="content">
+                <h2>2023</h2>
+                <p>Sygnum</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>2022</h2>
+                <p>Accenture</p>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
+
+    <div class = "content-three">
+        <div class = "heading">
+            <h1 id = "education">Education</h1>
+        </div>
+        <div class="timeline">
+            <div class="container left">
+              <div class="content">
+                <h2>2022-Current</h2>
+                <p>NTU</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>2018-2019</h2>
+                <p>Eunoia Junior College</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
 
     <div class = "footnote">
         <P>"Work in progress"</P>
