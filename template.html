@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tony's Portfolio Website!</title>
     <link rel = "stylesheet" href = "style.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <div class = "nav-bar">
@@ -12,12 +13,14 @@
             <div class = "nav-left" , style = "font-size: x-large">
                 Hello There!
             </div>
-            <div class = "nav-right">
-                <ul>
-                    <li><a href = "#about-me", style = "font-size: x-large">About me</a></li>
-                    <li><a href = "#work-experience", style = "font-size: x-large">Work Experience</a></li>
-                    <li><a href = "#education", style = "font-size: x-large">Education</a></li>
-                </ul>
+            <!-- <div class = "nav-right"> -->
+            <div class = "dropdown">
+                <button onclick = "myDropdown()" class = "dropbtn" style = 'font-size: x-large;'>More bout me!</button>
+                <div id = "myDropdown" class = "dropdown-content">
+                  <a href = "#about-me", style = "font-size: x-large">About me</a>
+                  <a href = "#work-experience", style = "font-size: x-large">Work Experience</a>
+                  <a href = "#education", style = "font-size: x-large">Education</a>
+                </div>
             </div>
         </div>
     </div>
