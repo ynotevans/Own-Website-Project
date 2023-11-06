@@ -1,7 +1,6 @@
 html {
     height: 100%;
     overflow: scroll;
-    
 }
 
 body {
@@ -126,26 +125,49 @@ a:visited {
 	
 }
 
-.top {
-    padding: 20px 100px;
-    margin: 50px 50px;
+#top-left {
+    background-color: #f1f1f1;
+    padding: 10px 10px;
+    margin: 10px 10px;
     border-spacing: 5px 5px;
+    float: left;
+    width: 50%;
 }
+
+#contents{
+    /* display: flex; */
+    width: 50%;
+    float: left;
+}
+
+div.top-heading-2{
+    position: sticky;
+    top: 0;
+    font-size: 20px;
+    
+}
+
 
 .heading{
     text-decoration: none;
 }
 
-.top-heading {
-    padding: 20px 50px;
-    margin: 50px 50px;
+.top-heading, .top-heading-2 {
+    padding: 20px 20px;
+    margin: 20px 20px;
     text-align: center;
 }
+.top-heading-2 {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    
+}
+
 
 .content-two, .content-three, .footnote {
     background-color: rgb(126, 55, 248);
     padding: 20px 30px;
-    margin: 50px 70px;
+    margin: 50px 50px;
     border-spacing: 10px 5px;
     border-radius: 10px;
     color: white;
@@ -178,9 +200,9 @@ img{
 
     text-align: center;
 }
+
 .profile-img img{
-    border-radius: 50% ;
-   
+    border-radius: 50% ;   
 }
 
 .social-icons{
@@ -190,6 +212,7 @@ img{
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 0px 0px;
 }
 
 .social-icons img{
@@ -217,4 +240,20 @@ a {
     /* color: white; */
 
 
-  }
+}
+
+#popup-window{
+  position: fixed;
+  width: 300px;
+  height: 200px;
+  background: rgb(126, 55, 248);
+  border: 1px solid black;
+  padding: 10px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+}

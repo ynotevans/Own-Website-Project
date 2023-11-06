@@ -6,103 +6,117 @@
     <title>Tony's Portfolio Website!</title>
     <link rel = "stylesheet" href = "style.css">
     <script src="index.js"></script>
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <!-- <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> -->
 </head>
 <body>
     <div class = "nav-bar">
         <div class = "nav-bar-content">
             <div class = "nav-left" , style = "font-size: x-large">
-                Hello There!
+              TONY EVANS ADISURYA
             </div>
             <!-- <div class = "nav-right"> -->
             <div class = "dropdown">
                 <button onclick = "myDropdown()" class = "dropbtn" style = 'font-size: x-large;'>About me!</button>
                 <div id = "myDropdown" class = "dropdown-content">
-                  <a href = "#", style = "font-size: x-large">Background</a>
-                  <a href = "#", style = "font-size: x-large">Skills</a>
-                  <a href = "#", style = "font-size: x-large">Hobbies</a>
-                  <a href = "#", style = "font-size: x-large">Gallery</a>
+                  <a href = "#", id = "popup-link", style = "font-size: x-large">Background</a>
+                  <a href = "#", id = "popup-link", style = "font-size: x-large">Skills</a>
+                  <a href = "#", id = "popup-link", style = "font-size: x-large">Hobbies</a>
+                  <a href = "#", id = "popup-link", style = "font-size: x-large">Gallery</a>
                 </div>
             </div>
+           
         </div>
     </div>
 
-    <div class = "top">
+    <div id = "top-left">
+
         <div class = "top-heading">
-          <h1>Welcome to my Website! Web in progress. Stay tune!</h1>
+          <h1>HEY THERE, I'M TONY!</h1>
+          <h3>A guy that just aspires to always learn new things</h3>
         </div>
+
         <div class = "profile-img">
           <img src = ./img/profile-photo.jpg>
-          <h2>Tony Evans Adisurya</h2>
         </div>
+
         <div class = "social-icons">
             <a href="https://github.com/ynotevans">
               <img src = "./img/github-square.511x512.png">
             </a>
             <a href = "https://www.linkedin.com/in/tony-evans-adisurya-336031201">
               <img src = "./img/linkedin-square-logo-svgrepo-com.svg">
-
             </a>
         </div>
-    </div>
+        
+      </div>
 
-    <!-- <div class = "content-one">
+      
+      <!-- <div class = "content-one">
         <div class = "heading">
-            <h1 id = "about-me">About Me</h1>
+          <h1 id = "about-me">About Me</h1>
         </div>
         <div class = "paragraph"> 
-            <p> I am Tony! Currently a Computer Science Undergraduate in Nanyang Technological University, School of Computer Science & Engineering, Singapore!</p>
+          <p> I am Tony! Currently a Computer Science Undergraduate in Nanyang Technological University, School of Computer Science & Engineering, Singapore!</p>
         </div>    
-    </div> -->
-
-    <div class = "content-two">
-        <div class = "heading">
-            <h1 id = "work-experience">WORK EXPERIENCE</h1>
+      </div> -->
+      
+      <div id = "contents">
+        <div class = "top-heading-2">
+          <h1> Get to know me!</h1>
         </div>
-        <div class="timeline">
-       
-              <div class="content1">
-                <h2>SYGNUM BANK</h2>
-                <p>Singapore, On Site, Full-time</p>
-                <p>May 2023 to July 2023</p>
-                <h2, style = "color: #f1f1f1; font-weight: bold; font-size: large;"" >OPERATIONS INTERN</h2>
-              </div>
-            
-              <div class="content2">
-                <h2>ACCENTURE</h2>
-                <p>Singapore, On Site, Full-time</p>
-                <p>January 2022 to June 2022</p>
-                <h1, style = "color: #f1f1f1; font-weight: bold; font-size: large;" >PROJECT INTERN</h1>
+        <div class = "content-two">
+          <div class = "heading">
+              <h1 id = "work-experience">WORK EXPERIENCE</h1>
+          </div>
+          <div class="timeline">
+        
+                <div class="content1">
+                  <h2>SYGNUM BANK</h2>
+                  <p>Singapore, On Site, Full-time</p>
+                  <p>May 2023 to July 2023</p>
+                  <h2, style = "color: #f1f1f1; font-weight: bold; font-size: large;" >OPERATIONS INTERN</h2>
+                </div>
+              
+                <div class="content2">
+                  <h2>ACCENTURE</h2>
+                  <p>Singapore, On Site, Full-time</p>
+                  <p>January 2022 to June 2022</p>
+                  <h1, style = "color: #f1f1f1; font-weight: bold; font-size: large;" >PROJECT INTERN</h1>
+                </div>
+
+          </div>     
+      </div>
+
+      <div class = "content-three">
+
+          <div class = "heading">
+              <h1 id = "education">EDUCATION</h1>
+          </div>
+
+          <div class = "edu1">
+              <div class="content">
+                <h2>NANYANG TECHNOLOGICAL UNIVERSITY</h2>
+                <p>Singapore | Full-time Student</p>
+                <h2>August 2022 - Present</h2>
               </div>
           </div>
-        </div>
-    </div>
 
-    <div class = "content-three">
-        <div class = "heading">
-            <h1 id = "education">EDUCATION</h1>
-        </div>
-        <div class = "edu1">
-            <div class="content">
-              <h2>NANYANG TECHNOLOGICAL UNIVERSITY</h2>
-              <p>Singapore | Full-time</p>
-              <h2>August 2022 - Present</h2>
-            </div>
-        </div>
-        <div class = "edu2">
-            <div class="content">
-              <h2>EUNOIA JUNIOR COLLEGE</h2>
-              <p>Singapore | Full-time</p>
-              <h2>February 2018 - December 2019</h2>
-            </div>
-        </div>
-    </div>
+          <div class = "edu2">
+              <div class="content">
+                <h2>EUNOIA JUNIOR COLLEGE</h2>
+                <p>Singapore | Full-time Student</p>
+                <h2>February 2018 - December 2019</h2>
+              </div>
+          </div>
 
+      </div>
+    </div>  
 
     <div class = "footnote">
         <P>"WORK IN PROGRESS"</P>
     </div>
+
 </body>
 </html>
