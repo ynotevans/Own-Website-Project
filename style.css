@@ -130,18 +130,13 @@ a:visited {
     padding: 10px 10px;
     margin: 10px 10px;
     border-spacing: 5px 5px;
-    float: left;
-    width: 50%;
+ 
 }
 
-#contents{
-    /* display: flex; */
-    width: 50%;
-    float: left;
-}
+
 
 div.top-heading-2{
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     font-size: 20px;
     
@@ -175,6 +170,7 @@ div.top-heading-2{
 
 .footnote{
     text-align: center;
+    float: right;
 }
 
 .content1, .content2, .edu1, .edu2{
@@ -197,7 +193,6 @@ img{
 }
 
 .profile-img{
-
     text-align: center;
 }
 
