@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
     margin: 0; 
     height: 100vh;
     width: 100wh;
@@ -20,9 +20,10 @@ body {
     align-items: center; 
     justify-content: center; 
     font-weight: bold;
+    color: white;
 }
 
-p{
+p{  
     font-weight: 600;
 }
 
@@ -61,7 +62,7 @@ p{
   height: 100%;
   width: 250px;
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
+  color: white;
 }
 
 .dropbtn:hover, .dropbtn:focus{
@@ -141,29 +142,20 @@ a:visited {
     text-align: center;
 }
 
-.content-one {
+.content-two, .content-three {
+    background-color: rgb(126, 55, 248);
     padding: 20px 30px;
     margin: 50px 70px;
     border-spacing: 10px 5px;
-    background-color: rgb(154, 96, 255);
-    border-radius: 40px;
+    border-radius: 10px;
+    color: white;
 }
 
-.content-two {
-    padding: 20px 30px;
-    margin: 50px 70px;
-    border-spacing: 10px 5px;
+.content1, .content2, .edu1, .edu2{
     background-color: rgb(154, 96, 255);
-    border-radius: 40px;
-}
-
-.content-three {
-    padding: 20px 30px;
-    margin: 50px 70px;
-    border-spacing: 10px 5px;
-    background-color: rgb(154, 96, 255);
-    border-radius: 40px;
-
+    padding: 15px 40px;
+    margin: 45px 10px;
+    border-radius: 10px;
 }
 
 
@@ -222,10 +214,16 @@ a {
     border-spacing: 10px 5px;
     border-radius: 20px;
     display: flex;
+    ;
     align-items: center;
     background-color: rgb(154, 96, 255);
     justify-content: space-evenly;
     text-align: left;
- }
+ }  
 
- 
+ div:hover {
+    
+    /* color: white; */
+
+
+  }
