@@ -10,6 +10,7 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> -->
 </head>
+
 <body>
     <div class = "nav-bar">
         <div class = "nav-bar-content">
@@ -30,7 +31,79 @@
         </div>
     </div>
 
-    <div id = "top-left">
+    <div class="portfolio-container" style = 'display: grid; grid-template-columns: 1fr 1fr;'>
+      <div class="profile-container" id = "top-left">
+
+        <div class = "top-heading">
+          <h1>HEY THERE, I'M TONY!</h1>
+          <h3>A guy that just aspires to always learn new things</h3>
+        </div>
+
+        <div class = "profile-img">
+          <img src = ./img/profile-photo.jpg>
+        </div>
+
+        <div class = "social-icons">
+            <a href="https://github.com/ynotevans">
+              <img src = "./img/github-square.511x512.png">
+            </a>
+            <a href = "https://www.linkedin.com/in/tony-evans-adisurya-336031201">
+              <img src = "./img/linkedin-square-logo-svgrepo-com.svg">
+            </a>
+        </div>
+      </div>
+
+      <div class = 'content-container' id = "contents" style = " max-height: 700px; overflow-y: scroll;">
+        <div class = "content-two" style = "position: sticky">
+          <div class = "heading">
+              <h1 id = "work-experience">WORK EXPERIENCE</h1>
+          </div>
+          <div class="timeline">
+        
+                <div class="content1">
+                  <h2>SYGNUM BANK</h2>
+                  <p>Singapore | On Site | Full-time</p>
+                  <h2>May 2023 to July 2023</h2>
+                  <h3, style = "color: #f1f1f1; font-weight: bold; font-size: large;" >OPERATIONS INTERN</h3>
+                </div>
+              
+                <div class="content2">
+                  <h2>ACCENTURE</h2>
+                  <p>Singapore | On Site | Full-time</p>
+                  <h2>January 2022 to June 2022</h2>
+                  <h3, style = "color: #f1f1f1; font-weight: bold; font-size: large;" >PROJECT INTERN</h3>
+                </div>
+
+          </div>     
+      </div>
+
+      <div class = "content-three">
+
+          <div class = "heading">
+              <h1 id = "education">EDUCATION</h1>
+          </div>
+
+          <div class = "edu1">
+              <div class="content">
+                <h2>NANYANG TECHNOLOGICAL UNIVERSITY</h2>
+                <p>Singapore | Full-time Student</p>
+                <h2>August 2022 - Present</h2>
+              </div>
+          </div>
+
+          <div class = "edu2">
+              <div class="content">
+                <h2>EUNOIA JUNIOR COLLEGE</h2>
+                <p>Singapore | Full-time Student</p>
+                <h2>February 2018 - December 2019</h2>
+              </div>
+          </div>
+
+      </div>
+      </div>  
+    </div>
+
+    <!-- <div id = "top-left">
 
         <div class = "top-heading">
           <h1>HEY THERE, I'M TONY!</h1>
@@ -50,9 +123,7 @@
             </a>
         </div>
         
-      </div>
-
-      
+      </div> -->
       <!-- <div class = "content-one">
         <div class = "heading">
           <h1 id = "about-me">About Me</h1>
@@ -61,8 +132,7 @@
           <p> I am Tony! Currently a Computer Science Undergraduate in Nanyang Technological University, School of Computer Science & Engineering, Singapore!</p>
         </div>    
       </div> -->
-      
-      <div id = "contents">
+      <!-- <div id = "contents">
         <div class = "top-heading-2">
           <h1> Get to know me!</h1>
         </div>
@@ -112,11 +182,7 @@
           </div>
 
       </div>
-    </div>  
-
-    <div class = "footnote">
-        <P>"WORK IN PROGRESS"</P>
-    </div>
+    </div>   -->
 
 </body>
 </html>
