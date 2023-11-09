@@ -31,3 +31,14 @@ function popUpWindow(){
     });
 
 }
+
+function openNav() {
+  document.getElementById("sidenav").style.left = "0";
+}
+
+function closeNav() {
+  document.getElementById("sidenav").style.left = "-250px";
+}
+
+document.getElementById("sidenav").addEventListener("mouseenter", openNav);
+document.getElementById("sidenav").addEventListener("mouseleave", closeNav);
