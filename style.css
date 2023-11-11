@@ -24,7 +24,8 @@ time, mark, audio, video {
 
 html {
     height: 100%;
-    overflow: auto;
+    /* overflow: auto; */
+    /* background-color: #514F4F; */
 }
 
 body {
@@ -35,7 +36,9 @@ body {
     /* display: flex;
     flex-direction: column;
     background-color: #f1f1f1; */
+    width: 100wh;
     height: 100vh;
+    overflow: hidden;
 }
 
 .nav-bar {
@@ -109,15 +112,22 @@ a:visited {
 
 #top-left, #top-right {
     background-color: #f1f1f1;
+    min-height: 100vh;
+
 }
+
+
 
 .side-bar {
     background-color: #514F4F;
     font-weight: bold;
     color: white;
     text-decoration: none;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
+    overflow: none;
+    height: 100vh;
+    /* display: block; */
 }
 
 
@@ -139,6 +149,11 @@ a:visited {
 
 #top-right::-webkit-scrollbar {
     display: none;
+}
+
+.content-container{
+    height: 100vh;
+    /* background-color: #383838; */
 }
 
 .content-two, .content-three {
@@ -176,8 +191,8 @@ img{
 
 .profile-img{
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
 }
 
 .profile-img img{
@@ -247,4 +262,8 @@ a {
     /* box-shadow: 0px 5px 20px #000; */
     /* background-color: darkviolet;
     margin: 30px 30px; */
+}
+
+.profile-container{
+    /* position: fixed; */
 }
