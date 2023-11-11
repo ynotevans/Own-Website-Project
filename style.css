@@ -82,7 +82,7 @@ p{
   
 
 ul {
-    float: right;
+    /* float: right; */
     list-style-type: none;
     /* width: 100%; */
 }
@@ -102,7 +102,7 @@ a {
 
 a:visited { 
     text-decoration: none; 
-    color: black;
+    /* color: black; */
    }
    
 #about-me, #work-experience, #education {
@@ -111,7 +111,7 @@ a:visited {
 
 
 #top-left, #top-right {
-    background-color: #f1f1f1;
+    
     min-height: 100vh;
 
 }
@@ -266,4 +266,36 @@ a {
 
 .profile-container{
     /* position: fixed; */
+}
+
+@media screen and (max-width: 1300px) {
+    body {
+      /* background-color: blue; */
+      
+      overflow: auto;
+    }
+
+    .side-bar{
+        height: 50%;
+    }
+    
+}
+
+@media screen and (min-width: 1300px) {
+    body {
+      /* background-color: blue; */
+      /* color: white; */
+      overflow: hidden;
+      
+    }
+
+    .nav-bar{
+        position: sticky;
+    }
+
+    .portfolio-container{
+        display: grid; grid-template-columns: 10% 45% 45%; 
+    }
+    
+    /* style = 'display: grid; grid-template-columns: 10% 45% 45%;  */
 }
