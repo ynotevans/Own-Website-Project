@@ -35,7 +35,7 @@ body {
     /* display: flex;
     flex-direction: column;
     background-color: #f1f1f1; */
-    
+    height: 100vh;
 }
 
 .nav-bar {
@@ -71,64 +71,12 @@ p{
     flex-direction: column;
 }
 
-/* .nav-right {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    width: 600px;
-    cursor: pointer; 
-} */
-/* 
-.dropbtn {
-  background-color: #514F4F;
-  text-align: center;
-  padding: 20px;
-  border: none;
-  cursor: pointer;
-  height: 100%;
-  width: 250px;
-  font-weight: bold;
-  color: white;
-} */
-/* 
-.dropbtn:hover, .dropbtn:focus{
-    background-color: rgb(77, 24, 168);
-} */
-/* 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-} */
-/* 
-.dropdown-content a{
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.dropdown-content a:hover {background-color: #ddd;}
-.show {display:block;}
-
-.nav-right li {
-    display: block;
-    list-style: none; 
-} */
-
   /* Style the main content */
 .main {
     margin-left: 160px; /* Same as the width of the sidenav */
     padding: 0px 10px;
 }
   
-  /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
-@media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-}
 
 ul {
     float: right;
@@ -158,25 +106,18 @@ a:visited {
     scroll-behavior:smooth;
 }
 
-.nav-bar-content a:hover {
-    background-color:#514F4F;
-    color: white;
-	
+
+#top-left, #top-right {
+    background-color: #f1f1f1;
 }
 
-/* #top-left {
-    background-color: #f1f1f1;
-
-    /* padding: 10px 10px; */
-    /* margin: 10px 10px;
-    border-spacing: 5px 5px; */
-    /* position: sticky;
-} */ */
-
-div > .portfolio-container
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.side-bar {
+    background-color: #514F4F;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -196,11 +137,9 @@ div > .portfolio-container
     
 }
 
-#contents::-webkit-scrollbar {
+#top-right::-webkit-scrollbar {
     display: none;
 }
-
-
 
 .content-two, .content-three {
     background-color: #282424;
@@ -217,7 +156,7 @@ div > .portfolio-container
     padding: 15px 40px;
     margin: 45px 15px;
      border-radius: 10px;
-    }
+}
     
 .edu1,.edu2{
     margin-bottom: 30px;
@@ -237,6 +176,8 @@ img{
 
 .profile-img{
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .profile-img img{
@@ -271,14 +212,10 @@ img{
 a {
     text-decoration: none;
     padding: 16px;
-}
-
- div:hover {
-    
     /* color: white; */
-
-
 }
+
+
 
 @media screen and (max-width: 1080px) {
     .portfolio-container {
@@ -287,38 +224,18 @@ a {
     }
   }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: -250px; /* Set this to a negative value to hide the sidebar initially */
-    background-color: #333;
-    overflow-x: hidden;
-    transition: 0.3s;
-    padding-top: 60px;
-  }
 
-.sidenav a {
-    padding: 15px 25px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #fff;
-    display: block;
-    transition: 0.2s;
+#container{
+
+    box-shadow: 0px 3px 8px #000;
+    
 }
-  
-.sidenav a:hover {
-   color: #f2f2f2;
-}
-  
-.sidenav:hover {
-    left: 0;
-}
-  
+
 #container:hover {
     transform: scale(1.1);
     border-radius: 10px;
 
-
+    box-shadow: 0px 5px 20px #000;
+    transition: all 200ms ease-in-out;
 }
+
