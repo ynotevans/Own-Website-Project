@@ -24,7 +24,7 @@ time, mark, audio, video {
 
 html {
     height: 100%;
-    overflow: scroll;
+    overflow: auto;
 }
 
 body {
@@ -280,23 +280,6 @@ a {
 
 }
 
-#popup-window{
-  position: fixed;
-  width: 300px;
-  height: 200px;
-  background: rgb(126, 55, 248);
-  border: 1px solid black;
-  padding: 10px;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-  display: none;
-}
-
-
 @media screen and (max-width: 1080px) {
     .portfolio-container {
       /* background-color: lightgreen; */
@@ -331,5 +314,11 @@ a {
   
 .sidenav:hover {
     left: 0;
-  }
+}
   
+#container:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+
+
+}
