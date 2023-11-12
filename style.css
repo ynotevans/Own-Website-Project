@@ -277,7 +277,13 @@ a {
 
     .side-bar{
         height: 50%;
+        text-align: center;
     }
+
+    #container:hover {
+        transform: none;
+    }
+
     
 }
 
